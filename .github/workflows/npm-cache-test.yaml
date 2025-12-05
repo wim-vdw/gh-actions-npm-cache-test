@@ -17,10 +17,11 @@ jobs:
           node-version: 24
           cache: 'npm'
 
-      - name: Display contents and size of npm cache directory
+      - name: Display contents and size of npm cache directory and verify cache
         run: |
-          ls -la /home/runner/.npm
-          du -sh /home/runner/.npm
+          ls -la ~/.npm
+          du -sh ~/.npm
+          npm cache verify
 
       - name: Show Node.js version
         run: node --version
@@ -37,10 +38,11 @@ jobs:
       - name: List installed npm packages
         run: npm ls
 
-      - name: Display contents and size of npm cache directory
+      - name: Display contents and size of npm cache directory and verify cache
         run: |
-          ls -la /home/runner/.npm
-          du -sh /home/runner/.npm
+          ls -la ~/.npm
+          du -sh ~/.npm
+          npm cache verify
 
       - name: Display workspace info
         run: ls -la ${{ github.workspace }}
