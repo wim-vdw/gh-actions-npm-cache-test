@@ -1,3 +1,3 @@
-import lodash from 'lodash';
+import prettier from "prettier";
 
-console.log('Lodash version:', lodash.VERSION);
+console.log("Prettier version:", prettier.version);
