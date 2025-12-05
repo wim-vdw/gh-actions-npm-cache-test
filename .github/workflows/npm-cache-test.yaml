@@ -23,6 +23,9 @@ jobs:
       - name: Show npm version
         run: npm --version
 
+      - name: Display workspace info
+        run: ls -la ${{ github.workspace }}
+
       - name: Install dependencies (clean installation based on package-lock.json)
         run: npm ci
 
