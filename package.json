@@ -1,11 +1,13 @@
 {
   "name": "gh-actions-npm-cache-test",
   "version": "1.0.0",
-  "description": "",
+  "description": "GitHub Actions npm caching tests",
+  "author": "Wim Van den Wyngaert",
+  "license": "MIT",
+  "private": true,
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "private": true
+  }
 }
