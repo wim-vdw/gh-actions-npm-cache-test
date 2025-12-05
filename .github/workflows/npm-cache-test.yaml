@@ -27,3 +27,6 @@ jobs:
 
       - name: List installed npm packages
         run: npm ls
+
+      - name: Run test program
+        run: npm start
