@@ -37,5 +37,13 @@ jobs:
       - name: List installed npm packages
         run: npm ls
 
+      - name: Display contents and size of npm cache directory
+        run: |
+          ls -la /home/runner/.npm
+          du -sh /home/runner/.npm
+
+      - name: Display workspace info
+        run: ls -la ${{ github.workspace }}
+
       - name: Run test program
         run: npm start
