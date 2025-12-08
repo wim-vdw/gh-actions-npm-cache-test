@@ -1,3 +1,3 @@
-import prettier from "prettier";
+import prettier from 'prettier'
 
-console.log("Prettier version:", prettier.version);
+console.log('Prettier version:', prettier.version)
