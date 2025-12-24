@@ -5,7 +5,7 @@ on:
 
 jobs:
   build:
-    runs-on: arc-runner-set4-gh-actions-npm-cache-test
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
